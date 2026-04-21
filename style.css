@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #0f172a;
+  --primary: #8b5cf6; 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  background-image: 
+    radial-gradient(circle at top right, rgba(139, 92, 246, 0.15), transparent 500px),
+    radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.15), transparent 500px);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Modificamos sutilmente el color del botón del chat de n8n para que combine si se puede */
+:root {
+  --chat--color-primary: var(--primary);
+  --chat--color-primary-shade-50: #7c3aed;
+}
